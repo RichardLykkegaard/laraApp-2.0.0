@@ -15,4 +15,11 @@
         </div>
       </div>
         <a href="/posts/{{$post->id}}/edit" class="btn btn-warning btn-lg">Edit</a>
+
+
+    <form action="{{route('posts.destroy', $post->id)}}" method="post" class="pull-right">
+    {{ method_field('DELETE') }}
+    <input type="submit" class="btn btn-danger btn-lg" value="Delete" href="/posts">
+
+    </form>
 @endsection
