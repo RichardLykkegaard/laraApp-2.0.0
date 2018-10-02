@@ -9,7 +9,9 @@
     <input name="title"type="text" class="form-control" placeholder="Title">
 
     <label for="body">Body</label>
-    <input id="article-ckeditor"type="text" name="body" class="form-control" placeholder="Body">
+
+    <textarea class="form-control"name="body" id="article-ckeditor" cols="30" rows="10"></textarea>
+
     <br>
     <input type="submit" value="Submit" class="btn btn-warning btn-lg">
     <a class="btn btn-warning btn-lg" href="/pages" role="button">Cancel</a>

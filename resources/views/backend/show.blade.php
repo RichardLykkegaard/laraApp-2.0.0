@@ -11,7 +11,7 @@
               
            </h1>
             <small>Created on {{$post->created_at}}</small>
-          <p class="lead my-3">{{$post->body}}</p>
+          <p class="lead my-3">{!!$post->body!!}</p>
         </div>
       </div>
 @endsection
