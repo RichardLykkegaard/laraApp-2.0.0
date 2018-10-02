@@ -14,4 +14,5 @@
           {!!$post->body!!}
         </div>
       </div>
+        <a href="/posts/{{$post->id}}/edit" class="btn btn-warning btn-lg">Edit</a>
 @endsection
