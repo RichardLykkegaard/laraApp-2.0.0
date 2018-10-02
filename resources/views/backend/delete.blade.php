@@ -1,9 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Delete Page</h1>
-    <p>Delete a page</p>
-    <p><a class="btn btn-primary btn-lg"href="/" role="button">Confirm Changes</a>
-        <a class="btn btn-warning btn-lg" href="/pages" role="button">Cancel</a>
-    </p>
+    <h1>Posts</h1>
+
+    
+
+    <form action="{{route('posts.destroy', $id)}}" method="delete">
+    @csrf
+        @foreach($posts as $post)
+          <h1 class="display-4 font-italic">
+           
+                 {{$post->title}}
+              
+           </h1>
+        @endforeach
+    <br>
+    <input type="submit" value="Submit" class="btn btn-warning btn-lg">
+    <a class="btn btn-warning btn-lg" href="/pages" role="button">Cancel</a>
+    </form>
+
+    
 @endsection

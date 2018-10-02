@@ -9,9 +9,10 @@
     <input name="title"type="text" class="form-control" placeholder="Title">
 
     <label for="body">Body</label>
-    <input type="text" name="body" class="form-control" placeholder="Body">
+    <input id="article-ckeditor"type="text" name="body" class="form-control" placeholder="Body">
     <br>
-    <input type="submit" value="Submit" class="btn btn-warning">
+    <input type="submit" value="Submit" class="btn btn-warning btn-lg">
+    <a class="btn btn-warning btn-lg" href="/pages" role="button">Cancel</a>
     </form>
 </div>
 @endsection
