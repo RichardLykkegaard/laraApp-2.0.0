@@ -17,8 +17,9 @@
         <a href="/posts/{{$post->id}}/edit" class="btn btn-warning btn-lg">Edit</a>
 
 
-    <form action="{{route('posts.destroy', $post->id)}}" method="post" class="pull-right">
+    <form action="{{route('posts.destroy', $post->id)}}"class="pull-right">
     {{ method_field('DELETE') }}
+    {!! csrf_field() !!}
     <input type="submit" class="btn btn-danger btn-lg" value="Delete" href="/posts">
 
     </form>

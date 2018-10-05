@@ -4,6 +4,6 @@
     <h1>Pages</h1>
     <p>Create or edit page</p>
 
-    <a href="/create" class="btn btn-warning btn-lg">Create New Page</a>
+    <a href="/create" class="btn btn-success btn-lg">Create New Page</a>
 
 @endsection

@@ -108,6 +108,6 @@ class PostsController extends Controller
         $post = Post::find($id);
         $post->delete();
         
-        return redirect('/posts')->with('Success','Post Removed');
+        return redirect('/posts/{{$post}}')->with('Success','Post Removed');
     }
 }

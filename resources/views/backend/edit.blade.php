@@ -16,7 +16,7 @@
     <br>
     
     <input type="submit" value="Submit" class="btn btn-warning btn-lg">
-    <a class="btn btn-warning btn-lg" href="/pages" role="button">Cancel</a>
+    <a class="btn btn-warning btn-lg" href="{{ route('posts.show', $post->id) }}" role="button">Cancel</a>
     </form>
 </div>
 @endsection

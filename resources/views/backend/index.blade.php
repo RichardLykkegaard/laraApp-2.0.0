@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Posts</h1>
-
+<a href="/create" class="btn btn-success btn-lg">Create New Post</a>
     @if(count($posts)>0)
         @foreach($posts as $post)
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
